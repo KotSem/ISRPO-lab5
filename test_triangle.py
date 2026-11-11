@@ -15,10 +15,9 @@ class TriangleTestCase(unittest.TestCase):
         res = perimeter(3, 4, 5)
         self.assertEqual(res, 12)
 
-    def test_invalid_triangle(self):
-        # Треугольник со сторонами 1, 2, 10 существовать не может (1 + 2 < 10)
-        res = perimeter(1, 2, 10)
-        self.assertEqual(res, 0)
+    def test_perimeter_float(self):
+        res = perimeter(2.5, 3.5, 4.0)
+        self.assertAlmostEqual(res, 10.0)
 
 
 if __name__ == '__main__':

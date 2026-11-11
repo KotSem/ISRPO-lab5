@@ -28,15 +28,13 @@
 
 ## Запуск Unit-тестов
 
-Запуск всех тестов:
+Запуск всех тестов локально:
 ```bash
 python -m unittest tests.py
 ```
 
-Запуск тестов по отдельным фигурам:
-```bash
-python -m unittest test_circle.py
-python -m unittest test_square.py
-python -m unittest test_rectangle.py
-python -m unittest test_triangle.py
-```
+## Непрерывная интеграция (CI)
+
+В проекте настроен GitHub Actions workflow (`.github/workflows/main.yml`), который при каждой операции `push` автоматически запускает unit-тесты на двух встроенных раннерах:
+- `ubuntu-latest`
+- `windows-latest`
