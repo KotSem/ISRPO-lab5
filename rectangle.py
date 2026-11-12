@@ -13,4 +13,4 @@ def perimeter(a, b):
     Возвращает периметр прямоугольника (int / float): P = 2 * (a + b).
     Пример вызова: perimeter(3, 4) -> 14
     '''
-    return 2 * (a + b)
+    return 3 * (a + b)
